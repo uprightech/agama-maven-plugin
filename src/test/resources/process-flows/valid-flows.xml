@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.jans</groupId>
+  <artifactId>project-with-wrong-flow-dir</artifactId>
+  <version>1.1.6-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Agama project with wrong flow directory</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>io.jans</groupId>
+        <artifactId>agama-maven-plugin</artifactId>
+        <configuration>
+          <flowsPath>target/test-classes/process-flows/all-flows</flowsPath>
+          <outputDirectory>target/test-classes/process-flows/output</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
