@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.jans</groupId>
+  <artifactId>full-gama</artifactId>
+  <version>1.1.6-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Complete agama project</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>io.jans</groupId>
+        <artifactId>agama-maven-plugin</artifactId>
+        <configuration>
+            <readmeFile>target/test-classes/generate-gama/exploded-gama/README.md</readmeFile>
+            <licenseFile>target/test-classes/generate-gama/exploded-gama/LICENSE</licenseFile>
+            <projectDescriptor>target/test-classes/generate-gama/exploded-gama/project.json</projectDescriptor>
+             <flows>target/test-classes/generate-gama/exploded-gama/code</flows>
+             <webAssets>target/test-classes/generate-gama/exploded-gama/web</webAssets>
+             <additionalJars>target/test-classes/generate-gama/exploded-gama/lib</additionalJars>
+             <outputFile>target/test-classes/generate-gama/example-gama-file.gama</outputFile>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
