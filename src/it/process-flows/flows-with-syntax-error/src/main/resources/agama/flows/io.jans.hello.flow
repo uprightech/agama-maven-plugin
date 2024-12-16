@@ -1,0 +1,5 @@
+//This flow does not make sense, however is syntactically valid and must pass validation
+Flows io.jans.hello
+    Basepath ""
+
+Log "Hello"
